@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+      
+nav {
+  height: 80px;
+  position: fixed; 
+  top: 0;
+  z-index: 1020;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+}
+
+
+
+      nav div img {
+        margin-left: 20px;
+        max-height: 70px;
+      }
+
+      .navbar-toggler img {
+        width: 30px;
+        height: auto;
+      }
+
+      .carousel-inner img,
+      .carousel-inner video {
+        width: 100%;
+        height: 500px; 
+        object-fit: cover; 
+      }
+
+      hr {
+        border-top: 2px solid #ddd;
+      }
+      section > .a{
+        background-color: lightblue;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="Crompton_Logo.png" alt="Crompton Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active dropdown-toggle" aria-current="page" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Investors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active dropdown-toggle" href="#">More</a>
+              </li>
+            </ul>
+            <form style="padding: 35px;" class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <hr>
+
+    <!-- Carousel -->
+    <div class="container-fluid mt-4">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <video autoplay muted loop src="Ccrm10.mp4" class="d-block w-100"></video>
+            </div>
+            <div class="carousel-item">
+              <img src="carosyl.jpg" class="d-block w-100" alt="Carousel Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="caro2.webp" class="d-block w-100" alt="Carousel Image 2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+
+    <section class="bg-light py-4 a">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <p style="background-color:   #e6e6e6" class="text-dark text-justify">
+              Crompton Greaves Consumer Electricals is a leading brand in India known for its high-quality electrical products, including fans, lighting, home appliances, and pumps. With a legacy of over 75 years, Crompton has earned a reputation for innovation, reliability, and energy efficiency. The company focuses on creating smart, sustainable, and user-friendly solutions that cater to the evolving needs of its customers, making it a trusted household name across the country.
+            </p>
+          </div>
+          <div class="col-8">
+            <form style="background-color: #f2f2f2;">
+              <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+       
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12"><img style="width: 100%; height: 480px;" src="footer.png" alt=""></div>
+        </div>
+      </div>
+    </footer>
+    <hr>
+
+</body>
+</html>
